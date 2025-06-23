@@ -1,17 +1,21 @@
 /*
-⣿⣿⣿⣿⣿⣿⡿⠛⣛⣛⣛⣛⣛⣛⣛⣛⣛⣛⡛⠛⠿⠿⢿⣿⣿⣿⣿⣿⣿
-⣿⣿⣿⣿⡿⢃⣴⣿⠿⣻⢽⣲⠿⠭⠭⣽⣿⣓⣛⣛⣓⣲⣶⣢⣍⠻⢿⣿⣿
-⣿⣿⣿⡿⢁⣾⣿⣵⡫⣪⣷⠿⠿⢿⣷⣹⣿⣿⣿⢲⣾⣿⣾⡽⣿⣷⠈⣿⣿
-⣿⣿⠟⠁⣚⣿⣿⠟⡟⠡⠀⠀⠀⠶⣌⠻⣿⣿⠿⠛⠉⠉⠉⢻⣿⣿⠧⡙⢿
-⡿⢡⢲⠟⣡⡴⢤⣉⣛⠛⣋⣥⣿⣷⣦⣾⣿⣿⡆⢰⣾⣿⠿⠟⣛⡛⢪⣎⠈
-⣧⢸⣸⠐⣛⡁⢦⣍⡛⠿⢿⣛⣿⡍⢩⠽⠿⣿⣿⡦⠉⠻⣷⣶⠇⢻⣟⠟⢀
-⣿⣆⠣⢕⣿⣷⡈⠙⠓⠰⣶⣤⣍⠑⠘⠾⠿⠿⣉⣡⡾⠿⠗⡉⡀⠘⣶⢃⣾
-⣿⣿⣷⡈⢿⣿⣿⣌⠳⢠⣄⣈⠉⠘⠿⠿⠆⠶⠶⠀⠶⠶⠸⠃⠁⠀⣿⢸⣿
-⣿⣿⣿⣷⡌⢻⣿⣿⣧⣌⠻⢿⢃⣷⣶⣤⢀⣀⣀⢀⣀⠀⡀⠀⠀⢸⣿⢸⣿
-⣿⣿⣿⣿⣿⣦⡙⠪⣟⠭⣳⢦⣬⣉⣛⠛⠘⠿⠇⠸⠋⠘⣁⣁⣴⣿⣿⢸⣿
-⣿⣿⣿⣿⣿⣿⣿⣷⣦⣉⠒⠭⣖⣩⡟⠛⣻⣿⣿⣿⣿⣿⣟⣫⣾⢏⣿⠘⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣤⣍⡛⠿⠿⣶⣶⣿⣿⣿⣿⣿⣾⣿⠟⣰⣿
-⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⣤⣭⣍⣉⣛⣋⣭⣥⣾⣿⣿
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣤⣤⣄⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣳⣿⠁⠉⠛⣷⡇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣶⣷⡾⣯⣿⣿⠀⠀⢀⣿⡇
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⡀⠀⠀⠀⠀⠀⢸⡇⡇⠈⠫⠟⢿⠀⠀⣼⣿⠃
+⠀⠀⠀⠀⠀⠀⣰⣯⣿⡿⠛⢿⢿⣷⠀⠀⠀⠀⠈⢿⣯⣖⣂⣤⣄⣤⣿⣿⠏⠀
+⣤⣞⠟⠿⢯⡯⣿⣟⠉⠁⠀⢸⣼⣿⠒⠂⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠉⠹⠃⠀
+⣿⣿⣄⠀⠀⢻⣿⡿⠀⠀⢀⣏⣟⢳⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠙⣿⣷⣧⡀⠘⠛⠃⠀⣠⣞⣿⡯⠃⠀⠀⠀⠀⠀⠀⢀⣄⡄⡄⠀⠀⠀⠀⠀⠀
+⠀⠈⢿⣟⣮⣦⡀⡀⣴⣷⡟⠃⠀⠀⠀⠀⠀⠀⠀⡴⣟⣛⠛⢿⡄⠀⠀⠀⠀⠀
+⠀⠀⠀⠈⠛⣿⣿⣿⡿⠋⠀⠀⠀⡤⣄⣤⣤⣄⣾⡟⠀⠀⠁⣸⡇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠁⠁⠀⠀⠀⠀⠀⣷⡏⡏⠉⠉⢿⡇⠀⠀⣴⣿⠇⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⢯⡮⡦⣀⠀⠀⠀⢀⣿⠇⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⢭⢯⣵⣿⠿⠶⡿⠃⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠉⠵⠻⠁⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠠⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠰⠁⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⠀⠀⠀
 /*
 
 /* General Styles */
@@ -23,6 +27,8 @@
 
 body {
     background-image: url(pantalon.jfif);
+    background-attachment: fixed;
+    background-position: center;
     margin: 0;
     padding: 0;
     display: flex;
@@ -32,11 +38,15 @@ body {
 body p {
     padding-top: 15px;
     padding-bottom: 15px;
+    font-weight: 500;
+    color: #222;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+
 }
 
-/* White div */
+/* Div container */
 .container {
-    background-color: white;
+    position: relative;
     width: 90%;
     max-width: 1500px;
     padding: 20px;
@@ -45,9 +55,37 @@ body p {
     margin-bottom: 20px;
 }
 
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(yarn.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(3px) brightness(0.5); /* Blur + darken */
+    z-index: -2;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.6); /* light overlay */
+    z-index: -1;
+}
+
 /* Header */
 header {
-    background-iage: url(pink-patch.png);
+    background-image: url(pink-patch.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,7 +96,15 @@ header {
 
 h2 {
     padding-top: 10px;
+    color: green;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
 }
+
+h3 {
+    color: navy;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
 /* Logo styles */
 .logo {
     width: 200px;
@@ -109,6 +155,8 @@ h2 {
     background-color: lightgoldenrodyellow;
     border-radius: 5px;
     border: 1px solid gray;
+    border-style: dashed;
+    border-width: 3px;
 }
 
 /* Attributes section styling */
@@ -121,9 +169,12 @@ h2 {
 /* Adjust text and layout for mobile */
 .attributes > li {
     font-size: 1.2rem;
-    font-weight: bold;
-    color: red;
-    background-color: pink;
+    color: navy;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    background-image: url(pink-patch.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
     padding: 10px;
     border-left: 5px solid green;
     margin-bottom: 10px;
@@ -157,7 +208,13 @@ h2 {
 
 .service li {
     font-size: 1rem;
-    background-color: pink;
+    background-image: url(pink-patch.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: #222;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    font-weight: 900;
     padding: 10px;
     margin-top: 5px;
     border-left: 4px solid green;
@@ -193,7 +250,8 @@ h2 {
 /* Contact card text */
 .contact-card p {
     font-size: 1rem;
-    color: #555;
+    color: #222;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
     line-height: 1.6;
 }
 
