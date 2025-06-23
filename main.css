@@ -62,7 +62,7 @@ body p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url(yarn.webp);
+    background-image: url(yarn.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     filter: blur(3px) brightness(0.5); /* Blur + darken */
