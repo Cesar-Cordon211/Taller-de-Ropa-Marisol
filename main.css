@@ -82,15 +82,16 @@ body p {
 /* Header */
 header {
     background-image: url(pink-patch.png);
+    background-attachment: scroll;
     background-repeat: no-repeat;
-    background-size: cover;
     background-size: 100% 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap; /* Allows stacking on smaller screens */
-    padding-bottom: 10px;
+    justify-content: flex-start;
+    flex-wrap: wrap; 
+    padding: 10px 20px;
     border-bottom: 3px solid green;
+    gap: 30px;
 }
 
 h2 {
@@ -171,7 +172,8 @@ h3 {
     color: navy;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     background-image: url(pink-patch.png);
-    background-repeat: no-repeat
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: 100% 100%;
     padding: 10px;
     border-left: 5px solid green;
@@ -206,9 +208,13 @@ h3 {
 
 .service li {
     font-size: 1rem;
+    background-color: #f097b2;
     background-image: url(pink-patch.png);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-attachment: scroll, local;
+    background-size: 150% 150%;
+    background-position: left center;
+    text-align: center;
     color: #222;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     font-weight: 900;
